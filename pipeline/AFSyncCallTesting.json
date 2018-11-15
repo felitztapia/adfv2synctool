@@ -1,0 +1,30 @@
+{
+	"name": "AFSyncCallTesting",
+	"properties": {
+		"activities": [
+			{
+				"name": "AFCallTest",
+				"type": "WebActivity",
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"url": "https://felitztesting.azurewebsites.net/api/HttpTrigger1?code=uezYxs3v3qHCTZ6YftCZXZUARqD9wAX3Qz/bWj/15ZwBF8LH1IOOXA==",
+					"method": "POST",
+					"headers": {
+						"name": "Felitz"
+					},
+					"body": {
+						"name": "Felitz",
+						"minutes": "5"
+					}
+				}
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
